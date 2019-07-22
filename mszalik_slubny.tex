@@ -1,0 +1,47 @@
+\documentclass[10pt, a5paper]{extarticle}
+\usepackage{fontspec}
+\usepackage[utf8]{luainputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[polish]{babel}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{paracol}
+\usepackage{parallel}
+\usepackage{pdfcolparallel}
+\usepackage{bbding}
+\usepackage[labelfont=bf]{caption}
+\usepackage[a5paper,top=1.5cm, bottom=1.5cm, left = 1.0cm, right=1.0cm]{geometry}
+\usepackage{relsize}
+
+\newcommand{\textjuni}[1]{{\fontspec{Junicode}#1}}
+
+\newcommand{\versicle}{\textcolor{red}{\textjuni{\char"2123. }}}
+\newcommand{\response}{\textcolor{red}{\textjuni{\char"211F. }}}
+
+\newcommand{\SmallCross}{\textcolor{red}{\smaller[1]\CrossMaltese\normalsize}}
+
+\DeclareUnicodeCharacter{01FD}{æ}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\vspace{4.0cm}
+\huge
+\textbf{Ślub Kamili i Karola}
+\vspace{1.5cm}
+
+{\large 21.09.2019}
+\end{center}
+\end{titlepage}
+
+
+\include{slub}
+\include{msza}
+
+\end{document}
