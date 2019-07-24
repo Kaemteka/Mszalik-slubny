@@ -18,6 +18,8 @@
 \usepackage[a5paper,top=1.5cm, bottom=1.5cm, left = 1.0cm, right=1.0cm]{geometry}
 \usepackage{relsize}
 
+\usepackage{pgfornament}
+
 \newcommand{\textjuni}[1]{{\fontspec{Junicode}#1}}
 
 \newcommand{\versicle}{\textcolor{red}{\textjuni{\char"2123. }}}
@@ -36,6 +38,12 @@
 \textbf{Ślub Kamili i Karola}
 \vspace{1.5cm}
 
+	\tikzset{
+		pgfornamentstyle/.style={scale=.25}
+	}
+	\foreach \i in {60} {\expandafter\pgfornament\expandafter{\i}\ }
+
+\vspace{1.5cm}
 {\large 21.09.2019}
 \end{center}
 \end{titlepage}
